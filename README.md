@@ -1,12 +1,13 @@
 # Agent Skills
 
-Two skills that make Claude argue with itself before it answers you.
+Two skills that make Claude argue with itself before it answers you or lets it make decisions it should be able to make on its own without stopping to ask you.
 
 - **xcheck** - when Claude is about to stop and ask you "should I do A or B?",
   it instead sends two or three subagents off to decide from different angles,
   makes them argue, and proceeds if they agree. You only get interrupted when
   they genuinely cannot settle it. This one works on its own in the
-  background; you should mostly forget it is there.
+  background; you should mostly forget it is there. Works especially well when a
+  goal or workflow is set so it can keep moving by making sane choices for itself.
 - **xpollinate** - for the hard questions, and expensive enough that you
   normally ask for it by name. Claude writes down its own answer first, then
   launches a control agent plus several agents with deliberately different

@@ -1,0 +1,11 @@
+.DS_Store
+
+# Release artifacts. scripts/package.py builds these locally and they get
+# attached to a GitHub release; they are never committed.
+/dist/
+
+# Working output the skills themselves produce, in case they are ever run
+# from inside this repo. Anchored to the repo root so they do not shadow
+# skills/xpollinate/.
+/xpollinate/
+/.xcheck-decisions.md

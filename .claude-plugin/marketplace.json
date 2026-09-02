@@ -1,0 +1,19 @@
+{
+  "name": "xpollinate",
+  "owner": { "name": "Nick Rotundo" },
+  "description": "Multi-agent deliberation skills for Claude Code. Cross-check a judgment call instead of interrupting the user, or run a full adversarial protocol on a hard question.",
+  "plugins": [
+    {
+      "name": "xpollinate",
+      "source": ".",
+      "description": "Recommended. Both skills: xpollinate (pre-commit, control, stances, red team, cross-pollination, synthesis for hard or high-stakes questions) and xcheck (decide a judgment call with a two-agent cross-check instead of asking).",
+      "skills": ["./skills/xcheck", "./skills/xpollinate"]
+    },
+    {
+      "name": "xcheck",
+      "source": ".",
+      "description": "Only xcheck, the lightweight one. Fires on its own whenever Claude is about to interrupt you with a judgment call it could make itself: two or three agents decide from different vantage points, argue, and escalate to you only if they cannot converge.",
+      "skills": ["./skills/xcheck"]
+    }
+  ]
+}

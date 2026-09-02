@@ -1,0 +1,20 @@
+{
+  "name": "xpollinate",
+  "displayName": "Agent Skills",
+  "description": "Multi-agent deliberation skills that make Claude argue with itself before it answers. xcheck decides a judgment call with a two-agent cross-check instead of interrupting you; xpollinate runs a full adversarial protocol (pre-commit, control, stances, red team, synthesis) on a hard question.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Nick Rotundo"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/nickjrotundo/agent-skills",
+  "skills": ["./skills/xcheck", "./skills/xpollinate"],
+  "keywords": [
+    "skills",
+    "subagents",
+    "deliberation",
+    "red-team",
+    "code-review",
+    "decision-making"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Automatic",
+      "description": "Fires on its own while Claude works. You are meant to forget it is there and notice you are interrupted less.",
+      "skills": ["xcheck"]
+    },
+    {
+      "title": "On request",
+      "description": "Deliberate, expensive analysis you normally ask for by name. Many agents, and a directory of reports at the end.",
+      "skills": ["xpollinate"]
+    }
+  ]
+}
